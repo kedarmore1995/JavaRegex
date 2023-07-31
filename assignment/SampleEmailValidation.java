@@ -5,13 +5,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SampleEmailValidation {
-    public  void  checkValidEmail(){
+    public void checkValidEmail(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your input: ");
 
         String input = sc.nextLine();
 
-        String regex = "^([a-z0-9+_-]+)(\\.)?[a-z0-9_-]+(@)([a-z0-9_-]+)((\\.)([a-z]{2,})){2}$";
+        String regex = "^([a-z0-9+_-]+)(\\.)?[a-z0-9_-]+(@)([a-z0-9_-]+)((\\.)([a-z]{2,}))?(\\.)([a-z]{2,})$";
 
         Pattern pattern = Pattern.compile(regex);
         //Creating a Matcher object

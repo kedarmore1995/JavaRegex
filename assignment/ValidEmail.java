@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 //abc.xyz@bl.co.in
 public class ValidEmail {
-    public static void main(String[] args) {
+    public void checkEmail() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your input: ");
         String input = sc.nextLine();
@@ -24,5 +24,10 @@ public class ValidEmail {
             System.out.println(input+" is not valid");
 
         }
+    }
+
+    public static void main(String[] args) {
+        ValidEmail validEmail= new ValidEmail();
+        validEmail.checkEmail();
     }
 }

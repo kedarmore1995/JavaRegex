@@ -5,8 +5,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ValidMobileNum {
-    public static void main(String[] args) {
-
+    public void checkMobileNo() {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your input: ");
@@ -21,5 +20,10 @@ public class ValidMobileNum {
         }else {
             System.out.println(mobileNum + " is not valid");
         }
+    }
+
+    public static void main(String[] args) {
+        ValidMobileNum validMobileNum= new ValidMobileNum();
+        validMobileNum.checkMobileNo();
     }
 }
