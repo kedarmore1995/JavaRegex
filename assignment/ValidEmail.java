@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 public class ValidEmail {
     public void checkEmail() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your input: ");
+        System.out.println("Enter your input : ");
         String input = sc.nextLine();
         //Regular expression
         String regex = "(abc.)+(xyz)?(@bl)+(.co.)+(in)?";
